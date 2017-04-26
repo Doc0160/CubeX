@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #EEEEEE;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#info {
+    margin: auto;
+    text-align: center;
+    background-color: #607d8b;
+    width: 100%;
+    height: 144px;
+    color: #FFF;
+    font-size: 36px;
+    position: absolute;
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+}
+
+#info .danger {
+    background-color: #f44336;
+}
+#info .warning {
+    background-color: #ff5722;
+}
+#info .info {
+    background-color: #03a9f4;
+}
+
+#info .success {
+    background-color: #4caf50;
+}
+
+#message {
+    position: absolute;
+    bottom: 0; right: 0; left: 0;
+}
+
+#board {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #b3b3b3;
+    border-bottom: 2px solid #b3b3b3;
+    width: 440px;
+    margin: auto;
+    position: absolute;
+    bottom: 40px; left:0; right: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+}
+
+.line {
+    display: flex;
+}
+
+.cell {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background: white;      
+    border-left:2px solid #b3b3b3;
+    border-top:2px solid #b3b3b3;
+    
+    font-family: 'icomoon';
+}
+
+.wall {
+    background: black;
+    color: black;
+}
+
+.hole {
+    background: white;
+    color: white;
+}
+
+.floor {
+    background: pink;
+    color: pink;
+}
+
+.cell:hover {
+    background: lightgreen;
+    cursor: pointer;
+}
+
+.red_spawn {
+    background: darkred;
+    color: darkred;
+}
+.blue_spawn {
+    background: darkblue;
+    color: darkblue;
+}
+.green_spawn {
+    background: darkgreen;
+    color: darkgreen;
+}
+.yellow_spawn {
+    background: yellow;
+    color: yellow;
+}
+
+.red_cube {
+    color: red;
+}
+.blue_cube {
+    color: blue;
+}
+.green_cube {
+    color: green;
+}
+.yellow_cube {
+    color: lightyellow ;
+}
+
+canvas {
+    border-left:2px solid #b3b3b3;
+    border-top:2px solid #b3b3b3;
+}
